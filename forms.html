@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./main.css" />
+    <title>Validação Formulário</title>
+  </head>
+  <body>
+    <div class="container">
+        <form id="meuFormulario">
+            <label for="campoA">Campo A:</label>
+            <input type="number" id="campoA" name="campoA" required>
+            <br>
+            <label for="campoB">Campo B:</label>
+            <input type="number" id="campoB" name="campoB" required>
+            <br>
+            <button type="button" onclick="validaForms()">Submeter</button>
+          </form>
+        
+          <div id="mensagem"></div>
+    </div>
+   
+
+    <script src="./main.js"></script>
+  </body>
+</html>
