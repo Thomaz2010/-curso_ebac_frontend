@@ -14,7 +14,7 @@ function validaForms() {
   }
 
   if (campoB > campoA) {
-    exibirmsg(true, "***Formulario Válido***");
+    exibirmsg(true, "***Formulário Válido***");
     limpaNome();
   } else {
     exibirmsg(false,  "***Formulário Inválido***");
