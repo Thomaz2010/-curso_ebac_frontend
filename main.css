@@ -1,64 +1,93 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: Roboto, sans-serif;
 }
 
 body {
-    background-color: rgb(63, 63, 62);
+   background-color: rgba(189, 182, 182, 0.565);
 }
 
-input,  button {
-    display: block;
-    padding: 8px;
-    margin-bottom: 8px;
-    width: 100%;
-    resize: none;
+header {
+   background: rgb(79, 106, 108);
+   background: linear-gradient(0deg, rgba(82, 180, 69, 0.999) 0%, rgb(109, 101, 40) 100%);
+   padding: 16px 0;
+   color: rgb(47, 35, 45);
+   display: flex;
+   border-bottom: 20px solid rgb(23, 40, 39);
+   justify-content: center;
+}
+
+header,
+h2 {
+   font-size: 150%;
+   font-weight: bold;
+}
+
+header button {
+   margin-left: 16px;
+
+}
+
+form {
+   background: rgb(97, 88, 85);
+   background: linear-gradient(0deg, rgba(97, 88, 85, 1) 0%, rgba(210, 209, 204, 1) 100%);
+   padding: 24px 0;
+   text-align: center;
+   display: none;
+}
+
+form h2 {
+   margin-bottom: 16px;
+}
+
+input,
+button {
+   padding: 18px;
+
 }
 
 button {
-    background-color: #2ecc71;
-    padding: 1.0em;
-    border: none;
-    text-transform: uppercase;
-    color: #fff;
-    font-weight: bold;
-    font-size: 18px;
-    font-style: italic;
-    cursor: pointer;
+   background-color: rgb(51, 122, 92);
+   border: none;
+   cursor: pointer;
+   font-weight: bold;
+   text-transform: uppercase;
+   color: aliceblue;
+   border-radius: 5%;
+
 }
 
 button:hover {
-    background-color: #27ae60;
+   cursor: pointer;
+   background-color: rgb(139, 200, 176);
+   color: #fff;
 }
 
-.container {
-    margin: 80px auto;
-    max-width: 640px;
-    width: 100%;
+#btn-cancelar {
+   background-color: rgb(181, 44, 44);
 }
 
 
-#mensagem {
+#btn-cancelar:hover {
+   cursor: pointer;
+   background-color: rgb(227, 125, 125);
+   color: #fff;
+}
 
-    text-align: center;
-    background-color: rgb(239, 233, 229);
-    padding: 1.0em;
-    font-size: 1.5em;
+.tConcluido {
+   text-decoration: line-through;
+}
+
+
+#nova-tarefa {
+   padding: 10px;
+   background-color: rgba(139, 167, 141, 0.535);
+   color: black;
+   text-align: center;
+   text-transform: uppercase;
+   font-style: italic;
    font-weight: bold;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#campoA , #campoB {
-    background-color: rgba(239, 243, 243, 0.638);
-    padding: 1.5%;
-    color: rgb(22, 16, 16);
-    font-size:1.5em;
-}
-
-#meuformulario, label{
-    font-size: 1.5em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #fff;
+   cursor: pointer;
 }
