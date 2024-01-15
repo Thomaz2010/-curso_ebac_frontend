@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Lista de tarefas</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Lista de Tarefas</h1>
+        <button type="button">Adicionar tarefa +</button>
+    </header>
+
+    <form action="tarefa">
+        <h2>Inserir Nova Tarefa</h2>
+        <input id="endereço-tarefa" type='text' required placeholder="Digite nova tarefa">
+        <button type="submit">Adicionar</button>
+        <button type="reset" id="btn-cancelar">Cancelar</button>
+    </form>
+    <div id="nova-tarefa">
+        <ul>
+            <li></li>
+        </ul>
+        
+    </div>
+    
+</body>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="main.js"></script>
+
+</html>
