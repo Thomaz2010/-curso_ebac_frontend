@@ -4,33 +4,269 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBAC Motors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
-    <title>Lista de tarefas</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
 </head>
 
 <body>
 
     <header>
-        <h1>Lista de Tarefas</h1>
-        <button type="button">Adicionar tarefa +</button>
+        <div class="containner containner-flex">
+            <h1>Ebac Motors</h1>
+            <div class="menu-hamburguer">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <nav>
+            <div class="containner">
+                <ul>
+                    <li>
+                        <a href="#">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#">Em Destaque</a>
+                    </li>
+                    <li>
+                        <a href="#">Promoções</a>
+                    </li>
+                    <li>
+                        <a href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
     </header>
 
-    <form action="tarefa">
-        <h2>Inserir Nova Tarefa</h2>
-        <input id="endereço-tarefa" type='text' required placeholder="Digite nova tarefa">
-        <button type="submit">Adicionar</button>
-        <button type="reset" id="btn-cancelar">Cancelar</button>
-    </form>
-    <div id="nova-tarefa">
-        <ul>
-            <li></li>
-        </ul>
-        
-    </div>
-    
-</body>
+    <div id="carrocel-img">
+        <img src="./imagens/slide1.png" alt="carro bmw">
+        <img src="./imagens/slide2.png" alt="carro porshe">
+        <img src="./imagens/slide3.png" alt="carrp ford">
 
-<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-<script src="main.js"></script>
+    </div>
+
+    <section id="sobre-a-loja">
+        <div class="containner containner-flex">
+            <img src="./imagens/loja.jpg" alt="foto loja física">
+            <div>
+                <h2>Sobre a Ebac Motors</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum, commodi placeat? Sequi, dolores
+                    harum. Distinctio ratione maiores saepe libero nemo, cupiditate ullam temporibus aliquid quos
+                    suscipit eum aperiam odio praesentium!
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi deserunt reiciendis dolore totam
+                    quia. Culpa nulla quibusdam aut laboriosam facere, cumque inventore? Molestias fugit accusantium
+                    minus perferendis nulla est beatae!
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="containner">
+            <h2>Em Destaque</h2>
+            <ul class="containner-flex lista-veiculos">
+                <li>
+                    <img src="./imagens/carro-bmw.png" alt="carrp BMW">
+                    <h3>BMW</h3>
+                    <p>
+                        Câmbio Automático , 4 portas , vidros e travas elétricas
+                    </p>
+                    <strong>R$ 175.000,00</strong>
+                    <button type="button">Tenho Interesse</button>
+                </li>
+                <li class="item-central">
+                    <img src="./imagens/carro-bmw.png" alt="carrp BMW">
+                    <h3>BMW</h3>
+                    <p>
+                        Câmbio Automático , 4 portas , vidros e travas elétricas
+                    </p>
+                    <strong>R$ 175.000,00</strong>
+                    <button type="button">Tenho Interesse</button>
+                </li>
+                <li>
+                    <img src="./imagens/carro-bmw.png" alt="carrp BMW">
+                    <h3>BMW</h3>
+                    <p>
+                        Câmbio Automático , 4 portas , vidros e travas elétricas
+                    </p>
+                    <strong>R$ 175.000,00</strong>
+                    <button type="button">Tenho Interesse</button>
+                </li>
+                <li>
+                    <img src="./imagens/carro-bmw.png" alt="carrp BMW">
+                    <h3>BMW</h3>
+                    <p>
+                        Câmbio Automático , 4 portas , vidros e travas elétricas
+                    </p>
+                    <strong>R$ 175.000,00</strong>
+                    <button type="button">Tenho Interesse</button>
+                </li>
+                <li class="item-central">
+                    <img src="./imagens/carro-bmw.png" alt="carrp BMW">
+                    <h3>BMW</h3>
+                    <p>
+                        Câmbio Automático , 4 portas , vidros e travas elétricas
+                    </p>
+                    <strong>R$ 175.000,00</strong>
+                    <button type="button">Tenho Interesse</button>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+
+    <section>
+        <div class="containner">
+            <h2>Promoções</h2>
+            <ul class="containner-flex lista-veiculos">
+                <li>
+                    <img src="./imagens/carro-bmw.png" alt="carrp BMW">
+                    <h3>BMW</h3>
+                    <p>
+                        Câmbio Automático , 4 portas , vidros e travas elétricas
+                    </p>
+                    <div class="price">
+                        <del>R$ 100.000</del>
+                        <strong>R$ 75.000</strong>
+                    </div>
+                    <button type="button">Tenho Interesse</button>
+                </li>
+                <li class="item-central">
+                    <img src="./imagens/carro-bmw.png" alt="carrp BMW">
+                    <h3>BMW</h3>
+                    <p>
+                        Câmbio Automático , 4 portas , vidros e travas elétricas
+                    </p>
+                    <div class="price">
+                        <del>R$ 100.000</del>
+                        <strong>R$ 75.000</strong>
+                    </div>
+                    <button type="button">Tenho Interesse</button>
+                </li>
+                <li>
+                    <img src="./imagens/carro-bmw.png" alt="carrp BMW">
+                    <h3>BMW</h3>
+                    <p>
+                        Câmbio Automático , 4 portas , vidros e travas elétricas
+                    </p>
+                    <div class="price">
+                        <del>R$ 100.000</del>
+                        <strong>R$ 75.000</strong>
+                    </div>
+
+                    <button type="button">Tenho Interesse</button>
+                </li>
+                <li>
+                    <img src="./imagens/carro-bmw.png" alt="carrp BMW">
+                    <h3>BMW</h3>
+                    <p>
+                        Câmbio Automático , 4 portas , vidros e travas elétricas
+                    </p>
+                    <div class="price">
+                        <del>R$ 100.000</del>
+                        <strong>R$ 75.000</strong>
+                    </div>
+                    <button type="button">Tenho Interesse</button>
+                </li>
+                <li class="item-central">
+                    <img src="./imagens/carro-bmw.png" alt="carrp BMW">
+                    <h3>BMW</h3>
+                    <p>
+                        Câmbio Automático , 4 portas , vidros e travas elétricas
+                    </p>
+                    <div class="price">
+                        <del>R$ 100.000</del>
+                        <strong>R$ 75.000</strong>
+                    </div>
+                    <button type="button">Tenho Interesse</button>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="containner">
+            <h2>Entre em Contato</h2>
+
+            <form action="form">
+                <div class="form-campo">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+
+                <div class="form-campo">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone">
+                </div>
+
+                <div class="form-campo">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-campo">
+                    <label for="veiculo-interesse">Veículo de Interesse</label>
+                    <input type="text" id="veiculo-interesse" name="veiculoDeInteresse">
+                </div>
+                <div class="form-campo">
+                    <label for="Mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem"></textarea>
+                </div>
+
+                <button type="submit">Enviar</button>
+            </form>
+
+        </div>
+
+    </section>
+
+    <footer>
+        <div class="containner containner-flex">
+            <p> 2024 &copy; Ebac Motors - Todos os direitos Reservados</p>
+
+            <ul class="containner-flex">
+                <li>
+                    <a href="#">
+                        <img src="./icones/facebook.png" alt="facebook">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./icones/instagram.png" alt="instagram">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="./icones/youtube.png" alt="youtube">
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+    </footer>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_PT.min.js"></script>
+
+    <script src="./js/main.js"></script>
+</body>
 
 </html>
