@@ -1,122 +1,20 @@
 * {
-   margin: 0;
-   padding: 0;
-   font-family: 'Roboto', sans-serif;
-   box-sizing: border-box;
-/* border: 1px solid red ; padrão para visualizar todos os containners*/ 
+   background-color: rgb(179, 191, 247);
 }
 
-html {
-   overflow-x: hidden;
-}
-
-.containner {
-   max-width: 1024px;
-   width: 100%;
-   margin: 0 auto;
-   
-
-}
-.formulario {
-   text-align: center;
-   font-size:50px;
-  
-}
-
-.contato {
+.form-label{
+   font-size: 25px;
+   font-weight: bold;
+   margin-right: 20px;
    text-align: center;
 }
 
-
-header , footer {
-
-   background-color: #2d7783;
-   padding: 26px;
-   color: aliceblue;
-
-}
-
-header>.containner,
-footer>.containner {
-
-   justify-content: space-between;
-   align-items: center;
-   padding-bottom: 16px;
-}
-
-
-
-.containner-flex {
-   display: flex;
+.home {
+   font-size: 50px;
+   padding: 20px;
+   margin-left: 50px;
+   font-weight: bold;
+   text-align: center;
    
-
 }
 
-section {
-   padding: 18px ;
-   justify-content: center;
-
-}
-
-section h2 {
-   margin-bottom: 16px;
-}
-
-
-button {
-   display: block;
-   width: 100%;
-   padding: 8px 0;
-   border: none;
-   background-color: #119759;
-   color: aliceblue;
-   font-size: 16px;
-   font-weight: bold;
-   font-style: italic;
-   cursor: pointer;
-   border-radius: 6px;
-}
-
-.form-campo{
-   margin-bottom: 15px;
-}
-
-.form-campo label {
-   font-weight: bold;
-   display: block;
-
-}
-
-.form-campo input,
-.form-campo textarea {
-   width: 100%;
-   display: block;
-   padding: 8px;
-
-}
-
-.form-campo textarea {
-   resize: none;
-   height: 60px;
-
-}
-
-form {
-   max-width: 360px;
-   margin-left: 30%;
-}
-
-form button {
-   max-width: 120px;
-
-}
-
-footer li {
-   list-style: none;
-   margin-left: 16px;
-
-}
-
-footer li img {
-   height: 32px;
-}
