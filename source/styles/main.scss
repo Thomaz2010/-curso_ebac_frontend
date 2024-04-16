@@ -1,0 +1,16 @@
+@use 'variaveis';
+
+body {
+    background-color: variaveis.$corPrincipal;
+}
+
+.container {
+    background-color:variaveis.$corFooter ;
+    text-align: center;
+}
+
+.containner{
+    background-color: variaveis.$corcontainner;
+    color: rgb(30, 32, 33);
+    text-align: center;
+}
